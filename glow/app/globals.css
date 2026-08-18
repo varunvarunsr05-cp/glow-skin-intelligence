@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #F7F3EC;
+  --white: #FFFFFF;
+  --ink: #111318;
+  --ink-secondary: #55565B;
+  --ink-muted: #6C6D72;
+  --gold: #C9955B;
+  --gold-light: #E8C89F;
+  --hero-dark: #151821;
+  --g-blue: #4285F4;
+  --g-red: #EA4335;
+  --g-yellow: #FBBC05;
+  --g-green: #34A853;
+}
+
+@theme inline {
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-ink-secondary: var(--ink-secondary);
+  --color-ink-muted: var(--ink-muted);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-hero-dark: var(--hero-dark);
+  --color-g-blue: var(--g-blue);
+  --color-g-red: var(--g-red);
+  --color-g-yellow: var(--g-yellow);
+  --color-g-green: var(--g-green);
+  --font-sans: var(--font-inter);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Fade-up reveal used across sections */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: reveal-up 0.6s ease forwards;
+}
+@keyframes reveal-up {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Gentle floating for hero bottle */
+.float-bottle {
+  animation: float-y 5s ease-in-out infinite;
+}
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
