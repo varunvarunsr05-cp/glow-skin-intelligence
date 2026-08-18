@@ -43,7 +43,7 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-9 flex items-center gap-3">
+          <div className="mt-9 flex items-center gap-3 flex-wrap min-w-0 text width limited smaller avatar/text sizes">
             <div className="flex -space-x-2">
               {[
                 "https://i.pravatar.cc/100?img=47",
@@ -60,7 +60,7 @@ export default function Hero() {
               ))}
             </div>
 
-            <p className="text-[13px] text-ink-secondary">
+            <p className="min-w-0 text-[11px] sm:text-[13px] leading-5 text-ink-secondary">
               12K+ glow seekers already found their match
             </p>
           </div>
