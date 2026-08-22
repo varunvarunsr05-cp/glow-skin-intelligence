@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Search, ArrowRight, CheckCircle2 } from "lucide-react";
 import SerumBottle from "./SerumBottle";
+import RoutineCard from "./RoutineCard";
 
 const popular = ["Dullness", "Dryness", "Uneven texture", "Breakouts"];
 
@@ -168,6 +169,7 @@ export default function SkinSearch() {
               </div>
             </div>
           )}
+          {searched && <RoutineCard />}
         </div>
       </div>
     </section>

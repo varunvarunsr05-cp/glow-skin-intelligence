@@ -163,7 +163,7 @@ The main priorities were:
 
 📌 Note
 
-GLOW Skin Intelligence™ is a conceptual reimagining created for a frontend development assignment. The product, testimonials, pricing, and related brand content are fictional and created purely for the design concept.
+GLOW Skin Intelligence™ is a conceptual reimagining google. The product, testimonials, pricing, and related brand content are fictional and created purely for the design concept.
 
 ---
 
